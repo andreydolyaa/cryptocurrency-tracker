@@ -2,4 +2,15 @@
 .home-page{
     min-height:100vh;
     background-color:#FAFCFE;
+    .stats{
+        display: none;
+    }
+}
+
+@media(max-width:650px){
+    .home-page{
+        .stats{
+            display:flex;
+        }
+    }
 }

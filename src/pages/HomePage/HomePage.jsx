@@ -5,6 +5,8 @@ import { cryptoService } from './../../services/cryptoService';
 import CurrenciesList from './../../components/CurrenciesList/CurrenciesList';
 import './HomePage.scss';
 import Subscribe from '../../components/Subscribe/Subscribe';
+import StatsHeader from '../../components/StatsHeader/StatsHeader';
+
 
 
 export default function HomePage({ searchData,search }) {
@@ -33,6 +35,9 @@ export default function HomePage({ searchData,search }) {
 
     return (
         <div className="home-page">
+        <div className="stats">
+        
+        </div>
             <CurrenciesList currencies={currencies}
                 numOfCurrencies={handleNumOfCurrencies}
                 handleSort={handleSort}

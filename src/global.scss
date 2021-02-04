@@ -82,3 +82,8 @@ select{
     90% {opacity: 1;}
     100% {opacity:1;}
   }
+@media(max-width:650px){
+    .stat-header{
+        display: none;
+    }
+}

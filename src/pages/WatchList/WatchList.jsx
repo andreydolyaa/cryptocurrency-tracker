@@ -5,7 +5,7 @@ import './WatchList.scss';
 import { useState } from 'react';
 import { cryptoService } from '../../services/cryptoService';
 import Badge from '../../components/Badge/Badge';
-import { TrashcanIcon,EyeIcon } from '@primer/octicons-react';
+import { TrashcanIcon, EyeIcon } from '@primer/octicons-react';
 import { localStorageService } from '../../services/localStorageService';
 import loading from '../../assets/icons/loading.gif';
 
@@ -40,7 +40,7 @@ export default function WatchList() {
     if (!currencies || currencies.length === 0) return <div className="loading"><p>Loading...</p><img src={loading} /></div>
     else return (
         <div className="watch-list">
-        <h2>Watch List</h2>
+            <h2>Watch List</h2>
             {currencies &&
                 <div className="inner">
                     {currencies.map(currency => {

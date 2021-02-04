@@ -77,7 +77,7 @@ export default function CurrencyPreview({ currency }) {
                 </div>
             </td>
 
-            <td>{currency.market_cap_rank}</td>
+            <td className="rank"><span>Ranked: </span>#{currency.market_cap_rank}</td>
 
             <td className="title">
                 <img src={currency.image}></img>

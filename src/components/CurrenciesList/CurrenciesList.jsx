@@ -33,7 +33,7 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
 
     if (!currencies.length) return (
         <div className="list">
-            <div className="options">
+        <div className="options">
                 <div className="watch-link"><Link to="/watch-list"><StarIcon size={16} className="ics" /> Watchlist</Link></div>
                 <div className="rows"><DisplayNum numOfCurrencies={numOfCurrencies} /></div>
             </div>

@@ -32,9 +32,11 @@ function App() {
     return (
         <div >
             <Router>
-                <StatsHeader />
+                <div className="stat-header">
+                    <StatsHeader />
+                </div>
                 <AppHeader search={search} mobileMenu={toggleMobileMenu} />
-                {mobile && <MobileNav mobileMenu={toggleMobileMenu}/>}
+                {mobile && <MobileNav mobileMenu={toggleMobileMenu} />}
                 <Scroll />
                 <Switch>
                     <Route path="/currency/:id" render={props => <CurrencyDetails {...props} />}></Route>
@@ -44,7 +46,7 @@ function App() {
                     <Route path="/about" render={props => <About {...props} />}></Route>
                     <Route path="/news" render={props => <News {...props} />}></Route>
                     <Route path="/contact" render={props => <Contact {...props} />}></Route>
-                    <Route exact path="/" render={props => <HomePage {...props} searchData={searchData} search={search}/>}></Route>
+                    <Route exact path="/" render={props => <HomePage {...props} searchData={searchData} search={search} />}></Route>
                 </Switch>
                 <AppFooter />
             </Router>

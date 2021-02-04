@@ -32,7 +32,7 @@ async function loadCurrencyVsSupported(c, s) {
     return res.data;
 }
 
-async function loadVsPrice(name,to){
+async function loadVsPrice(name, to) {
     var res = await axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=${name}&vs_currencies=${to}`);
     return res.data;
 }
@@ -102,6 +102,10 @@ async function loadCurrencies(num = 20, search = '', sortPhrase = '', startSort 
 
 async function loadWatchList() {
     var data = localStorageService.load('watchList');
+    if (!data || !data.length) {
+        data = ["Bitcoin"];
+        localStorageService.save("watchList", data);
+    }
     const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true`);
     var watchlist = res.data.filter(currency => data.includes(currency.name));
     return watchlist;
