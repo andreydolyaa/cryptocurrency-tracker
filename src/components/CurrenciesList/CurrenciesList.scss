@@ -96,6 +96,7 @@ table{
             width:100%;
             input{
                 width:300px;
+                height: 30px;
             }
             form{
                 width:330px;
@@ -104,6 +105,10 @@ table{
                 margin:auto;
                 font-size: 1rem;
                 justify-content: center;
+                border-radius: 3px;
+                .icon{
+                    margin-top:5px;
+                }
             }
         }
     }

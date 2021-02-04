@@ -73,6 +73,7 @@
         .inner{
             width:330px;
             flex-direction: column;
+            
             .exp{
                 .links-menu{
                     z-index:99;
@@ -82,6 +83,7 @@
         }
         .inner > * {
             margin:10px;
+            padding:10px;
         }
     }
 }
