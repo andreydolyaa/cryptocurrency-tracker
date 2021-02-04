@@ -36,11 +36,9 @@
             color:rgb(148, 148, 148);
         }
         h2{
-            font-size:1.7rem;
-            font-family: 'Rubik', sans-serif;
-            background: -webkit-linear-gradient(290deg,#1976D2 35%, #01c080);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size:2rem;
+            font-weight: 800;
+            font-family: 'Montserrat Alternates', sans-serif;
         }
         .logo{
             display: flex;
@@ -111,8 +109,28 @@
 
 @media(max-width:650px){
     .app-header{
+        background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
         .brand{
+            h2{
+              color:white;  
+              font-size:1.7rem !important;
+              font-weight: bold;
+              span{
+                  font-weight: 300;
+              }
+            }
             max-width: 330px;
+            .mobile-menu-btn{
+                color:white
+            }
         }
     }
 }
+// #92FFC0

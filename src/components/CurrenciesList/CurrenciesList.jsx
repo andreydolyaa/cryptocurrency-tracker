@@ -33,7 +33,7 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
 
     if (!currencies.length) return (
         <div className="list">
-        <div className="options">
+            <div className="options">
                 <div className="watch-link"><Link to="/watch-list"><StarIcon size={16} className="ics" /> Watchlist</Link></div>
                 <div className="rows"><DisplayNum numOfCurrencies={numOfCurrencies} /></div>
             </div>
@@ -48,36 +48,38 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
                 <div className="rows"><DisplayNum numOfCurrencies={numOfCurrencies} /></div>
             </div>
             <div className="mobile-search"><Search search={search} /></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>#Rank</th>
-                        <th onClick={() => sortBy("name")}>Name
+            <div className="overflow-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>#Rank</th>
+                            <th onClick={() => sortBy("name")}>Name
                             {toggleNameIcon ? <TriangleDownIcon size={16} /> : <TriangleUpIcon size={16} />}
-                        </th>
-                        <th onClick={() => sortBy("price")}>Price
+                            </th>
+                            <th onClick={() => sortBy("price")}>Price
                             {togglePriceIcon ? <TriangleDownIcon size={16} /> : <TriangleUpIcon size={16} />}
-                        </th>
-                        <th onClick={() => sortBy("24h")}>24h
+                            </th>
+                            <th onClick={() => sortBy("24h")}>24h
                             {toggle24hIcon ? <TriangleDownIcon size={16} /> : <TriangleUpIcon size={16} />}
-                        </th>
-                        <th onClick={() => sortBy("marketCap")}>Market Cap
+                            </th>
+                            <th onClick={() => sortBy("marketCap")}>Market Cap
                             {toggleMarketCapIcon ? <TriangleDownIcon size={16} /> : <TriangleUpIcon size={16} />}
-                        </th>
-                        <th onClick={() => sortBy("volume")}>Volume
+                            </th>
+                            <th onClick={() => sortBy("volume")}>Volume
                             {toggleVolumeIcon ? <TriangleDownIcon size={16} /> : <TriangleUpIcon size={16} />}
-                        </th>
-                        <th>Last 7 Days</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        currencies.map(currency =>
-                            <CurrencyPreview currency={currency} key={currency.id} />)
-                    }
-                </tbody>
-            </table>
+                            </th>
+                            <th>Last 7 Days</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            currencies.map(currency =>
+                                <CurrencyPreview currency={currency} key={currency.id} />)
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

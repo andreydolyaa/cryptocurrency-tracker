@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './AppFooter.scss';
-import logo from '../../assets/icons/chart.png';
 import { Link } from 'react-router-dom';
 
 
@@ -13,7 +12,6 @@ export default function AppFooter() {
 
 
                 <div className="logo">
-                    <img src={logo} />
                     <h2>CryptoScan</h2>
                 </div>
 

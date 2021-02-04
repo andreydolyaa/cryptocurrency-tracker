@@ -1,4 +1,6 @@
-
+.overflow-table{
+    overflow-x: auto;
+}
 .list{
     max-width:1400px;
     margin:auto;
@@ -83,9 +85,7 @@ table{
     }
     table{
         max-width: 600px;
-        thead{
-            display: none;
-        }
+        
     }
 }
 @media(max-width:650px){
@@ -114,9 +114,7 @@ table{
     }
     table{
         max-width: 330px;
-        thead{
-            display: none;
-        }
+        
     }
     .watch-link{
         a{

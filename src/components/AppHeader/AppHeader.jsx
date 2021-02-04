@@ -23,8 +23,8 @@ export default function AppHeader(props) {
 
             <div className="brand">
                 <div className="logo">
-                    <img src={logoImg} alt="" />
-                    <h2 className="title"> CryptoScan</h2>
+                    
+                    <h2 className="title"> Crypto<span>Scan</span></h2>
                 </div>
                 <div className="items">
                     <Link to="/">Cryptocurrencies<span className="notif"></span></Link>
