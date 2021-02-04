@@ -11,7 +11,6 @@ import Exchanges from './pages/Exchanges/Exchanges';
 import About from './pages/About/About';
 import News from './pages/News/News';
 import Calculator from './components/Calculator/Calculator';
-import Subscribe from "./components/Subscribe/Subscribe";
 import AppFooter from "./components/AppFooter/AppFooter";
 import Contact from './pages/Contact/Contact';
 import MobileNav from "./components/MobileNav/MobileNav";
@@ -37,7 +36,7 @@ function App() {
                 </div>
                 <AppHeader search={search} mobileMenu={toggleMobileMenu} />
                 {mobile && <MobileNav mobileMenu={toggleMobileMenu} />}
-                <Scroll />
+                
                 <Switch>
                     <Route path="/currency/:id" render={props => <CurrencyDetails {...props} />}></Route>
                     <Route path="/watch-list" render={props => <WatchList {...props} />}></Route>

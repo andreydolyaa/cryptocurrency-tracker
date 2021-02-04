@@ -4,13 +4,16 @@
     background-color: rgb(242, 242, 242);
     justify-content: center;
     animation-name: example;
-animation-duration: .3s;
-text-align: center;
+    animation-duration: .3s;
+    text-align: center;
+    border-bottom: 1px solid rgb(226, 226, 226);   
+    align-items: center; 
     a{
         font-weight: 700;
         margin:15px;
         font-size:16px;
         color:rgb(38, 38, 38);
+        border-bottom: 1px dotted rgb(184, 184, 184);  
     }
 }
 

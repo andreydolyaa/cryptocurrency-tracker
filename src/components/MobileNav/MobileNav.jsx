@@ -12,7 +12,7 @@ export default function MobileNav(props) {
     }
     return (
         <div className="mobile-nav">
-            <Link onClick={closeMenu} to="/">Cryptocurrencies<span className="notif"></span></Link>
+            <Link onClick={closeMenu} to="/">Cryptocurrencies </Link>
             <Link onClick={closeMenu} to="/exchanges">Exchanges</Link>
             <Link onClick={closeMenu} to="/calculator">Calculator</Link>
             <Link onClick={closeMenu} to="/news">News</Link>

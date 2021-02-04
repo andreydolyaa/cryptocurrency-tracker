@@ -109,9 +109,9 @@
 
 @media(max-width:650px){
     .app-header{
-        background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #283048;  
+background: -webkit-linear-gradient(to right, #859398, #283048);  
+background: linear-gradient(to right, #859398, #283048); 
 
 
 
@@ -121,12 +121,12 @@ background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, F
             h2{
               color:white;  
               font-size:1.7rem !important;
-              font-weight: bold;
+              font-weight: 500;
               span{
-                  font-weight: 300;
+                  font-weight: 700;
               }
             }
-            max-width: 330px;
+            max-width: 350px;
             .mobile-menu-btn{
                 color:white
             }

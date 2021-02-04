@@ -63,8 +63,12 @@
 @media(max-width:650px){
     .trade{
         .trade-item{
-            font-size:12px;
+            font-size:10px;
+            font-weight: 700;
             width:360px;
+            img{
+                width:35px;
+            }
         }
     }
 }

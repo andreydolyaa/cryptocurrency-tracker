@@ -61,11 +61,7 @@
     }
     .history-table{
         thead{
-            tr{
-                th{
-                    font-size:10px;
-                }
-            }
+            display: none;
         }
         tbody{
             tr{

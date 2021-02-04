@@ -7,8 +7,11 @@
         display: flex;
         justify-content: space-between;
         padding:3rem;
+        h3{
+            color:rgb(60, 67, 97);
+        }
         a{
-            color:black;
+            color:rgb(75, 75, 75);
             font-weight: 500;
         }
         a:hover{
@@ -23,9 +26,9 @@
         .logo{
             display:flex;
             align-items: center;
-            font-family: 'Montserrat Alternates', sans-serif;
             h2{
                 font-family: 'Rubik', sans-serif;
+                font-weight: 400;
                 span{
                     font-weight: 800;
                 }

@@ -34,6 +34,7 @@ export default function CurrencyDetails(props) {
     });
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         const fetchData = async () => {
             const currencyData = await cryptoService.loadCurrency(props.match.params.id);
             const priceData = await cryptoService.loadCurrencyVsSupported(props.match.params.id, 'USD');
