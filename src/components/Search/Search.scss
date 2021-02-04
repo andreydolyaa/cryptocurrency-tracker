@@ -1,0 +1,40 @@
+form{
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    width:250px;
+    padding:2px;
+    .icon{
+        color:rgb(87, 87, 87);
+    }
+    input{
+        border:none;
+        border-radius: 5px;
+        height:25px;
+        width:220px;
+        background-color: rgb(233, 233, 233);
+        padding:5px;
+        font-weight: 600;
+        color:rgb(87, 87, 87);
+    }
+    ::-webkit-input-placeholder{
+        color:rgb(158, 158, 158);
+        font-weight: 600;
+        padding:5px;
+    }
+}
+@media(max-width:1140px){
+    form{
+        width:140px;
+        input{
+            width:110px;
+            height:20px;
+        }
+        ::-webkit-input-placeholder{
+            font-weight: 500;
+            font-size: 10px;
+        }
+        .icon{
+            width:12px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+.App{
+    background-color: #FAFCFE;
+}
+.App-dark{
+    
+}
+
+button{
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.is-active{
+    color:#fff !important;
+    background-color: rgb(0, 119, 255);
+    border-radius:5px;
+}
+
+
+.loading{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    img{
+        width:20px;
+        height:20px;
+        margin-left:1rem;
+    }
+}
+
+select{
+    cursor: pointer;
+    border:none;
+            background-color:#DCDCDC;
+            padding:1px 5px 1px 5px;
+            outline: none;
+            border-radius: 3px;
+            color:rgb(102, 102, 102);
+            font-weight: 600;
+            .option{
+                background-color: rgb(230, 230, 230);
+                font-weight: 600;
+            }
+}
+
+.title{
+    padding:1rem 0 1rem 0;
+    text-transform: capitalize;
+    color:rgb(44,44,44);
+}
+
+
+@keyframes example {
+    0%   {opacity: 0;}
+    10%   {opacity: 0.2;}
+    20%   {opacity: 0.3;}
+    30%   {opacity: 0.4;}
+    40%   {opacity: 0.5;}
+    50%  {opacity: 0.6;}
+    60%  {opacity: 0.7;}
+    70% {opacity: 0.8;}
+    80% {opacity: 0.9;}
+    90% {opacity: 1;}
+    100% {opacity:1;}
+  }

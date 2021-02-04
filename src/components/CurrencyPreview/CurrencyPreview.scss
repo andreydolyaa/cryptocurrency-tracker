@@ -1,0 +1,113 @@
+
+.currency-preview{
+    color:rgb(44, 44, 44);
+    transition: .2s;
+    background-color:#FAFCFE;
+    .mobile-view-text{
+        display: none;
+    }
+    td{
+        border-bottom: 1px solid rgb(230, 230, 230);
+        font-weight: 600;
+        font-size:14px;
+        img{
+            width:25px;
+            margin-right:10px;
+        }
+        
+    }
+    .title{
+        font-weight: 700;
+        font-size:14px;
+        padding:1rem 0 1rem 0;
+        display:flex;
+        align-items: center;
+        cursor: pointer;
+        span{
+            font-weight: 600;
+            color:rgb(136, 136, 136);
+            margin-left:5px;
+        }
+    }
+    .sub-id{
+        color:rgb(88, 102, 126);
+        font-size:12px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .icon{
+        color:gray;
+        margin-right:1rem;
+        margin-left:10px;
+        cursor: pointer;
+        .icon-watch{
+            color:rgb(0, 119, 255);
+        }
+    }
+    .graph{
+        margin-right:1rem;
+    }
+}
+
+.currency-preview:hover{
+    background-color: #eff1f3;
+}
+
+@media(max-width:1450px){
+    
+}
+@media(max-width:1140px){
+    .currency-preview{
+        td{
+            font-size:12px;
+            
+        }
+        .sub-id{
+            font-size:12px;
+        }
+    }
+}
+@media(max-width:850px){
+    .currency-preview{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin:10px 0 10px 0;
+            // background-color: rgb(243, 243, 243);
+            background: -webkit-linear-gradient(240deg,#f2f2f2 35%, #ffffff);
+            box-shadow: 1px 1px 3px rgb(197, 197, 197);
+            border-radius: 3px;
+        td{
+            border-bottom: none;
+            margin:5px;
+            font-size: 1rem;
+        }
+        .title{
+            font-size:1.7rem;
+            font-weight: 800;
+            img{
+                width:35px;
+            }
+        }
+        
+        .icon{
+            margin-left:1px;
+            display:none;
+        }
+        .price{
+            font-size:1.5rem;
+            font-weight: 700;
+        }
+    }
+}
+@media(max-width:650px){
+    .currency-preview{
+        .mobile-view-text{
+            display:flex;
+            justify-content: center;
+            color:gray;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.routes-bar{
+    background-color: #fff;
+    width:100%;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .internal{
+        max-width: 1400px;
+        margin: auto;
+        nav{
+            padding:2rem 2rem 2rem 0;
+            a{
+                padding:5px 15px 5px 15px;
+                color:rgb(0, 0, 0);
+                font-weight: 700;
+                transition: .2s;
+            }
+            a:not(:first-child){
+                margin-left:1rem;
+            }
+            a:hover{
+                color:rgb(0, 119, 255);
+                border-radius: 5px;
+            } 
+        }
+    }
+}
+@media(max-width:1450px){
+    .routes-bar{
+        .internal{
+            max-width:1100px;
+        }
+    }
+}
+@media(max-width:1140px){
+    .routes-bar{
+        .internal{
+            max-width:800px;
+        }
+    }
+}
+@media(max-width:850px){
+    .routes-bar{
+        .internal{
+            max-width:600px;
+        }
+    }
+}
+
+@media(max-width:650px){
+    .routes-bar{
+        .internal{
+            max-width:330px;
+            nav{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                flex-wrap: wrap;
+                a{
+                    margin:1px !important;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

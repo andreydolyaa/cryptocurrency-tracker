@@ -1,0 +1,110 @@
+.buttons{
+    button{
+        border:none;
+        padding:10px 15px 10px 15px;
+        margin:10px;
+        background-color:rgb(0, 119, 255);
+        color:white;
+        border-radius:5px;
+        cursor: pointer;
+        transition: .4s;
+        font-weight: 600;
+    }
+    button:hover{
+        background-color:rgb(0, 69, 148);
+    }
+    
+}
+
+
+.dropdown{
+    background-color:rgb(255, 255, 255);
+    margin:10px;
+    display:none;
+    position: absolute;
+    padding:1rem;
+    border-radius: 5px;
+    flex-direction: column;
+    font-size:1rem;
+    color:rgb(31, 31, 31);
+    box-shadow: 1px 1px 4px rgb(192, 192, 192);
+    font-weight: 600;
+    animation-name: example;
+    animation-duration: .3s;
+    z-index: 999;
+    .logo{
+        display:flex;
+        align-items: center;
+        margin:10px;
+        h2{
+            margin-left:5px;
+            max-width:300px;
+            color:rgb(44, 44, 44);
+        }
+        img{
+            border-radius: 5px;
+        }
+    }
+    .link{
+        a{
+           color: rgb(255, 255, 255);
+           text-decoration: none;
+           font-weight: 700;
+           font-size:1rem;
+        }
+        p{
+            margin:10px;
+            font-size:14px;
+            color:Gray;
+            font-weight: 500;
+            max-width:300px;
+        }
+    }
+}
+
+
+
+.exhchanges-dropdown{
+    display:flex;
+    flex-direction: column;
+    transition: .2s;
+    .img{
+        display:Flex;
+        align-items: center;
+        margin:10px;
+        h2{
+            margin-left:15px;
+            p{
+                font-size:12px;
+                color:gray;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+        img{
+            width:55px;
+            border-radius: 5px;
+        }
+    }
+    a{
+        color:rgb(49, 49, 49);
+        text-decoration: none;
+    }
+}
+.exhchanges-dropdown:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+@media(max-width:650px){
+    .buttons{
+        width: 330px;
+        button{
+            font-size:14px;
+            padding:8px;
+            font-size: 12px !important;
+        }
+    }
+    .dropdown{
+        position: static;
+    }
+}

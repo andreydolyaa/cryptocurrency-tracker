@@ -1,0 +1,70 @@
+.trade{
+    max-width:1400px;
+    margin:1rem auto;
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .trade-item{
+        position: relative;
+        background-color: white;
+        margin:5px;
+        // border:1px solid black;
+        box-shadow: 1px 1px 3px rgb(202, 202, 202);
+        display: flex;
+        width:450px;
+        align-items: center;
+        font-size:14px;
+        font-weight: 500;
+        img{
+            border-radius: 3px;
+            margin:5px;
+        }
+        .inner{
+            margin:5px;
+            display: flex;
+            flex-direction: column;
+            .market{
+                color:black;
+                font-weight: 800;
+            }
+        }
+        .redirect{
+            padding:0;
+            margin:0;
+            position: absolute;
+            right:5px;
+            bottom:5px;
+        }
+        .vol{
+            span{
+                font-weight: 700;
+                color:rgb(88, 88, 88);
+            }
+        }
+        .pair{
+            font-weight: 700;
+            // border-radius: 3px;
+            background-color:rgb(134, 134, 134);
+            color:#fff;
+            padding:1px 1px 1px 1px;
+        }
+    }
+}
+@media(max-width:1140px){
+    .trade{
+        max-width:800px;
+        .container{
+            justify-content: center;
+        }
+    }
+}
+@media(max-width:650px){
+    .trade{
+        .trade-item{
+            font-size:12px;
+            width:360px;
+        }
+    }
+}

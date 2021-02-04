@@ -1,0 +1,65 @@
+
+.market-cap{
+    border-top:1px solid rgb(223, 223, 223);
+    margin:2rem auto;
+    width:100%;
+    font-size:14px;
+    
+    .appheader{
+        display: none !important;
+    }
+    .inner{
+        display:flex;
+        justify-content: space-evenly;
+        p{
+            margin-top:5px;
+        }
+        .card{
+            padding:10px 30px 10px 30px;
+        }
+    }
+
+}
+
+.badger{
+    display: flex; 
+    .semi-badge{
+        background-color: rgb(0, 0, 0);
+        padding:1px 3px 1px 3px;
+        border-radius: 2px;
+        color:white;
+        font-weight: 500;
+        font-size:12px;
+    }
+}
+
+.title-info{
+    font-weight: 600;
+    font-size:13px;
+    margin-right:10px;
+    color:rgb(83, 83, 83);
+}
+.title-info-sec{
+    color:rgb(0, 110, 255);
+    font-weight: 500;
+    font-size:13px;
+}
+
+.reg{
+    font-weight: 700;
+    font-size:14px;
+}
+.reg-1{
+    font-size:13px;
+    font-weight: 700;
+}
+
+@media(max-width:650px){
+    .market-cap{
+        .inner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.graphs{
+    max-width:1400px;
+    margin: auto;
+    display:Flex;
+}
+
+@media(max-width:1450px){
+    .graphs{
+        max-width: 1100px;
+    }
+}
+@media(max-width:1140px){
+    .graphs{
+        max-width: 800px;
+        flex-direction: column;
+    }
+}
+@media(max-width:850px){
+    .graphs{
+        max-width: 600px;
+    }
+}
+
+@media(max-width:650px){
+    .graphs{
+        max-width: 330px;
+    }
+}

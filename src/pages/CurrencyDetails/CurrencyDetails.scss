@@ -1,0 +1,243 @@
+
+.det{
+    padding-top:3rem;
+    background-color: #FAFCFE; 
+}
+.currency-details-main{
+    max-width:1400px;
+    margin:auto;
+    color:rgb(44, 44, 44);
+    .info{
+        display:flex;
+    }
+}
+
+.details-container{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.currency-name{
+    .title{
+        display: flex;
+        align-items: center;
+        h1{
+            margin-left:1rem;
+            font-size: 2.5rem;
+        }
+    }
+    .badges{
+        margin-top:1rem;
+    }
+}
+
+
+.currency-price{
+    .text-sm{
+        font-size:13px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color:rgb(135, 135, 135);
+    }
+    .text-sm-2{
+        font-size:14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color:rgb(135, 135, 135);
+    }
+    .diff{
+        display: flex;
+        justify-content: space-between;
+        max-width:270px;
+    }
+    .price{
+        padding:10px 0px 10px 0px;
+        display:flex;
+        align-items: center;
+        h3{
+            padding:5px 10px 5px 10px;
+            color:#fff;
+            border-radius: 5px;
+            margin-left:1rem;
+            font-weight: 500;
+        }
+    }
+    .high-low{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width:360px;
+        margin-top:10px;
+        p{
+            font-size:14px;
+            font-weight: 600;
+            color:rgb(135, 135, 135);
+            span{
+                color:black;
+            }
+        }
+    }
+}
+
+
+button{
+    border:none;
+    padding:10px 15px 10px 15px;
+    margin:10px;
+    background-color:rgb(0, 119, 255);
+    color:white;
+    border-radius:5px;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: 600;
+}
+button:hover{
+    background-color:rgb(0, 69, 148);
+}
+
+@media(max-width:1450px){
+    .currency-details-main{
+        max-width:1100px;
+    }
+    .details-container{
+        
+    }
+    .currency-name{
+        .title{
+            h1{
+                font-size:2rem;
+            }
+        }
+    }
+    .currency-price{
+            .price{
+                h1{
+                    font-size:1.5rem;
+            }
+            h3{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width:1140px){
+    .currency-details-main{
+        max-width:800px;
+    }
+    .currency-price{
+        .price{
+            justify-content: center;
+            align-items: center;
+        }
+        .diff{
+            max-width:100%;
+            justify-content: space-around;
+            align-items: center;
+            margin:1rem;
+        }
+    }
+    .details-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .currency-name{
+            .title{
+                justify-content: center;
+                h1{
+                    font-size:2.5rem;
+                    margin-left:2px;
+                }
+            }
+            .badges > *{
+                margin:10px;
+            }
+        }
+    }
+    .details-container > * {
+        margin:20px 0 20px 0;
+    }
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .currency-price{
+        .price{
+            h1{
+                font-size:2.5rem;
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        .high-low{
+            flex-direction: column;
+        }
+    }
+}
+}
+@media(max-width:850px){
+    .currency-details-main{
+        max-width:600px;
+    }
+    
+}
+
+@media(max-width:650px){
+    .det{
+        padding-top:1rem;
+    }
+    .currency-details-main{
+        max-width:330px;
+    }
+    .currency-price{
+        padding:1rem;
+        .price{
+            h1{
+                font-size:2.5rem;
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+    }
+    .high-low{
+        flex-direction: column;
+        p{
+            margin:10px;
+        }
+        select{
+            margin-top:10px;
+        }
+    }
+}
+.details-container{
+    .currency-name{
+        .badges{
+            .badge{
+                p{
+                    font-size:14px;
+                }
+            }
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width:50px;
+            }
+            h1{
+                font-size: 3rem;
+                background: -webkit-linear-gradient(290deg,#303030 35%, #777777);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+        }
+        .badges{
+            margin-top:1rem;
+        }
+    }
+}
+}

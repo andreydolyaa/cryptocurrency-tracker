@@ -1,0 +1,120 @@
+.subscribe{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    color:#2C2C2C;
+    .inner{
+        max-width:1400px;
+        margin:4rem auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:3rem;
+        .txt{
+            .sub{
+                display: flex;
+                align-items: center;
+                margin-top:3rem;
+            }
+        }
+        img{
+            width:300px;
+        }
+        p{
+            margin:1rem 0 1rem 0;
+            font-size:2.5rem;
+        }
+        span{
+            font-weight: 700;
+        }
+        input{
+            
+            height:40px;
+            width:300px;
+            border:1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+            font-size:1rem;
+            padding:1rem;
+        }
+        button{
+            height:40px;
+        }
+    }
+}
+@media(max-width:1450px){
+    .subscribe{
+        .inner{
+            max-width: 1100px;
+        }
+    }
+}
+@media(max-width:1140px){
+    .subscribe{
+        .inner{
+            max-width:800px;
+            img{
+                width:200px;
+            }
+            p{
+                font-size:1.5rem;
+            }
+            
+        }
+    }
+}
+@media(max-width:850px){
+    .subscribe{
+        .inner{
+            max-width:600px;
+            img{
+                width:150px;
+            }
+            p{
+                font-size:1.2rem;
+            }
+            h4{
+                font-size:14px;
+            }
+            input{
+                width:200px;
+                font-size:12px;
+                height:30px;
+            }
+            button{
+                height:30px;
+                font-size:12px;
+            }
+        }
+    }
+}
+@media(max-width:650px){
+    .subscribe{
+        .inner{
+            flex-direction: column;
+            max-width:330px;
+            text-align: center;
+            img{
+                width:150px;
+            }
+            p{
+                font-size:1.5rem;
+            }
+            h4{
+                font-size:1rem;
+            }
+            .sub{
+                display: flex;
+                flex-direction: column;
+                input{
+                    width:100%;
+                    font-size:12px;
+                    height:30px;
+                }
+                button{
+                    height:30px;
+                    font-size:12px;
+                    width:100%;
+                }
+            }
+        }
+    }
+}

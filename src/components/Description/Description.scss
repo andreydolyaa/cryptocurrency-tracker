@@ -1,0 +1,33 @@
+.description{
+    max-width:1400px;
+    margin:1rem auto;
+    .inner{
+        font-size:1.2rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:1450px){
+    .description{
+        max-width:1100px;
+    }
+}
+@media(max-width:1140px){
+    .description{
+        max-width:800px;
+    }
+
+}
+@media(max-width:850px){
+    .description{
+        max-width:600px;
+    }
+
+}
+
+@media(max-width:650px){
+    .description{
+        max-width:330px;
+    }
+
+}

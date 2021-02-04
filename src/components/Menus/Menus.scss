@@ -1,0 +1,87 @@
+.menus{
+    font-size: 12px;
+    margin:2rem 0 0 0;
+    .inner{
+        display: flex;
+        width:450px;
+        flex-wrap: wrap;
+        .exp{
+            position: relative;
+            cursor: pointer;
+            color:black;
+            .links-menu{
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 1px 4px rgb(185, 185, 185);
+                position: absolute;
+                left:0px;
+                top:100%;
+                border-radius:5px;
+                animation-name: example;
+                animation-duration: .3s;
+                .site{
+                    font-size:10px;
+                    margin:10px;
+                }
+                .site:hover{
+                    background-color: rgb(214, 214, 214);
+                }
+            }
+        }
+    }
+    p{
+        font-family: 'consolas' !important;
+    }
+    .link{
+        background-color: #eeeeee;
+        display: inline-block;
+        padding:5px 10px 5px 10px;
+        border-radius: 5px;
+        transition: .2s;
+        font-weight: 800;
+        margin-right:5px;
+        .icon{
+            width:13px;
+            color:rgb(0, 0, 0);
+        }
+        a{
+            font-family: 'consolas' !important;
+            display: flex;
+            align-items: center;
+            color:rgb(0, 0, 0);
+        }
+        a>*{
+            margin-left:5px;
+        }
+    }
+    .link:hover{
+        background-color: #d8d8d8;
+    }
+    .source{
+        margin-top:1rem;
+    }
+}
+
+@media(max-width:650px){
+    .menus{
+        font-size: 14px;
+        .link{
+            a{
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .inner{
+            width:330px;
+            flex-direction: column;
+            .exp{
+                .links-menu{
+                    z-index:99;
+                    width:100%;
+                }
+            }
+        }
+        .inner > * {
+            margin:10px;
+        }
+    }
+}

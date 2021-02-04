@@ -1,0 +1,35 @@
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(242, 242, 242);
+    justify-content: center;
+    animation-name: example;
+animation-duration: .3s;
+text-align: center;
+    a{
+        font-weight: 700;
+        margin:15px;
+        font-size:16px;
+        color:rgb(38, 38, 38);
+    }
+}
+
+@keyframes example {
+    0%   {opacity: 0;}
+    10%   {opacity: 0.2;}
+    20%   {opacity: 0.3;}
+    30%   {opacity: 0.4;}
+    40%   {opacity: 0.5;}
+    50%  {opacity: 0.6;}
+    60%  {opacity: 0.7;}
+    70% {opacity: 0.8;}
+    80% {opacity: 0.9;}
+    90% {opacity: 1;}
+    100% {opacity:1;}
+  }
+
+  @media(max-width:850px){
+      .mobile-nav{
+          display:flex;
+      }
+  }

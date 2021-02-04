@@ -1,0 +1,17 @@
+.display-num{
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    p{
+        font-size:14px;
+        font-weight: 600;
+        max-width:140px;
+        margin-right:10px;
+    }
+    select{
+        background-color: rgb(233, 233, 233);
+        option{
+            font-weight: 500;
+        }
+    }
+}

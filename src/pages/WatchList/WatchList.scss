@@ -1,0 +1,95 @@
+.watch-list{
+    max-width:1400px;
+    margin:1rem auto;
+    color:rgb(44,44,44);
+    font-size:13px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    h2{
+        padding:5px;
+        text-align: center;
+    }
+    .remove{
+        align-self: flex-end;
+    }
+    .inner{
+        display: flex;
+        flex-wrap: wrap;
+        .watchlist-item{
+            width:300px;
+            box-shadow: 1px 1px 15px 3px rgb(235, 235, 235);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding:1rem;
+            margin:1rem auto;
+            background-color: #fff;
+            .img-title{
+                display:flex;
+                align-items: center;
+                border-bottom:1px solid rgb(225, 225, 225);
+                padding-bottom:10px;
+                p{
+                    margin-left:5px;
+                    font-size:16px;
+                }
+                .symbol{
+                    color:gray;
+                }
+            }
+            img{
+                width:40px;
+                align-self: flex-end;
+            }
+            p{
+                margin:5px;
+            }
+            .price-div{
+                display: flex;
+                align-items: center;
+                margin-top:10px;
+                justify-content: space-between;
+                font-size:20px;
+                .badge-perc{
+                    display: flex;
+                    align-self: center;
+                }
+                .price{
+                    font-weight: 700;
+                }
+                .badge{
+                    padding:1px !important;
+                    background-color: rgb(0, 0, 0);
+                    font-size: 10px;
+                    margin-left:5px;
+                    align-self: center;
+                }
+            }
+        }
+        .remove{
+            cursor: pointer;
+        }
+        .remove:hover{
+            color:red;
+        }
+    }
+}
+
+.empty{
+    max-width: 1400px;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        max-width: 500px;
+        text-align: center;
+    }
+    a{
+        margin-top:1rem;
+        font-size: 20px;
+        color:gray;
+        text-decoration: none;
+    }
+}

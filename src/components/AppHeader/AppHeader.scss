@@ -1,0 +1,118 @@
+
+.app-header{
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding:12px 0 12px 0;
+    width:100%;
+    background-color: #fff;
+    .brand{
+        padding:5px 0px 5px 10px;
+        max-width:1400px;
+        margin:auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mobile-menu-btn{
+            display: none;
+        }
+        a{
+            color:black;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left:2rem;
+            transition: .2s;
+            .notif{
+                position: absolute;
+                background-color: rgb(0, 132, 255);
+                border-radius: 50%;
+                height:5px;
+                width:5px;
+                font-size:12px;
+                animation-name: pound;
+                animation-duration: .5s;
+                animation-iteration-count: infinite;
+            }
+        }
+        a:hover{
+            color:rgb(148, 148, 148);
+        }
+        h2{
+            font-size:1.7rem;
+            font-family: 'Bree Serif', serif !important;
+            background: -webkit-linear-gradient(290deg,#1976D2 35%, #01c080);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right:7px;
+            }
+        }
+    }
+}
+
+@keyframes pound {
+    0%   {box-shadow: 0px 0px 1px rgb(110, 178, 255);}
+    10%   {box-shadow: 0px 0px 2px rgb(74, 158, 255);}
+    20%   {box-shadow: 0px 0px 3px rgb(24, 132, 255);}
+    30%   {box-shadow: 0px 0px 4px rgb(0, 119, 255);}
+    40%   {box-shadow: 0px 0px 5px rgb(0, 106, 226);}
+    50%  {box-shadow: 0px 0px 6px rgb(0, 89, 190);}
+    60%  {box-shadow: 0px 0px 7px rgb(0, 76, 163);}
+    70% {box-shadow: 0px 0px 8px rgb(0, 74, 158);}
+    80% {box-shadow: 0px 0px 11px rgb(0, 63, 134);}
+    90% {box-shadow: 0px 0px 12px rgb(0, 98, 105);}
+    100% {box-shadow: 0px 0px 13px rgb(0, 66, 87);}
+  }
+
+
+  @media(max-width:1450px){
+      .app-header{
+          .brand{
+              max-width:1100px;
+          }
+          a{
+              font-size:10px;
+          }
+          .title{
+              font-size:1.5rem !important;
+          }
+          .logo{
+              img{
+                  width:20px;
+              }
+          }
+      }
+  }
+  @media(max-width:1140px){
+    .app-header{
+        .brand{
+            max-width: 800px;
+        }
+    }
+}
+  @media(max-width:850px){
+    .app-header{
+        .brand{
+            max-width: 600px;
+            .items{
+                display:none;
+            }
+            .search{
+                display: none;
+            }
+            .mobile-menu-btn{
+                display: block;
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .app-header{
+        .brand{
+            max-width: 330px;
+        }
+    }
+}

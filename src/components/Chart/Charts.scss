@@ -1,0 +1,52 @@
+
+
+.chart{
+    max-width:1400px;
+    margin:1rem auto;
+    .tes{
+        width:900px;
+    }
+    .intro{
+        display: flex;
+        align-items: center;
+        .title{
+            font-size: 1rem;
+        }
+        select{
+            height:25px;
+            width:80px;
+            margin-left: 3rem;
+        }
+    }
+}
+
+@media(max-width:1450px){
+    .chart{
+        max-width: 1100px;
+        .tes{
+            width:700px;
+        }
+    }
+}
+@media(max-width:1140px){
+    .chart{
+        max-width: 800px;
+    }
+}
+@media(max-width:850px){
+    .chart{
+        max-width: 600px;
+        .tes{
+            width:600px;
+        }
+    }
+}
+
+@media(max-width:650px){
+    .chart{
+        max-width: 330px;
+        .tes{
+            width:330px;
+        }
+    }
+}
