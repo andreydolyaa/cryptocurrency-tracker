@@ -12,7 +12,7 @@ export default function AppFooter() {
 
 
                 <div className="logo">
-                    <h2>CryptoScan</h2>
+                    <h2>Crypto<span>Scan</span></h2>
                 </div>
 
                 <div>

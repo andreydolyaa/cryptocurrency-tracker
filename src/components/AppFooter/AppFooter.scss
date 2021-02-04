@@ -23,12 +23,12 @@
         .logo{
             display:flex;
             align-items: center;
-            background: -webkit-linear-gradient(290deg,#1976D2 35%, #01DE96);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-family: 'Montserrat Alternates', sans-serif;
             h2{
                 font-family: 'Rubik', sans-serif;
-                font-weight: 800;
+                span{
+                    font-weight: 800;
+                }
             }
             img{
                 margin-right:5px;

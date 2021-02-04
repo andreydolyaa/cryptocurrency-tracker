@@ -11,11 +11,13 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 
 
-export default function CurrencyPreview({ currency }) {
+
+export default function CurrencyPreview({ currency,changeView }) {
     const STORAGE_KEY = 'watchList';
     const history = useHistory();
     const [storageData, setStorageData] = useState([]);
     var [update, setUpdate] = useState(false);
+    var [view,setView] = useState(false);
 
     var formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -23,8 +25,10 @@ export default function CurrencyPreview({ currency }) {
     });
 
     useEffect(() => {
+        console.log(changeView);
         setStorageData(localStorageService.load(STORAGE_KEY));
     }, [update])
+
 
     const toCurrencyDetails = (currencyName) => {
         var currency = '';
@@ -68,8 +72,10 @@ export default function CurrencyPreview({ currency }) {
         }
     }
 
+
+    // <tr className="currency-preview"
     return (
-        <tr className="currency-preview" onClick={() => toCurrencyDetails(currency.name)}>
+        <tr className={changeView ? 'currency-preview-t' : 'currency-preview'} onClick={() => toCurrencyDetails(currency.name)}>
             <td>
                 <div className="icon" onClick={(event) => addToWatchList(currency.name, event)}>
                     {storageData !== null && storageData.includes(currency.name) ?

@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './CurrenciesList.scss';
 import CurrencyPreview from './../CurrencyPreview/CurrencyPreview';
 import DisplayNum from '../DisplayNum/DisplayNum';
-import { TriangleDownIcon, TriangleUpIcon, StarIcon } from '@primer/octicons-react';
+import { TriangleDownIcon, TriangleUpIcon, StarIcon, ListUnorderedIcon, ProjectIcon } from '@primer/octicons-react';
 import { Link } from 'react-router-dom';
 import loading from '../../assets/icons/loading.gif';
 import Search from './../Search/Search';
@@ -16,6 +16,7 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
     var [toggle24hIcon, setToggle24hIcon] = useState(false);
     var [toggleMarketCapIcon, setToggleMarketCapIcon] = useState(false);
     var [toggleVolumeIcon, setToggleVolumeIcon] = useState(false);
+    var [toggleView, setToggleView] = useState(false);
 
     useEffect(() => {
 
@@ -30,6 +31,10 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
         handleSort(data);
     }
 
+    const changeView = () => {
+        setToggleView(toggleView = !toggleView);
+        console.log(toggleView);
+    }
 
     if (!currencies.length) return (
         <div className="list">
@@ -48,9 +53,13 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
                 <div className="rows"><DisplayNum numOfCurrencies={numOfCurrencies} /></div>
             </div>
             <div className="mobile-search"><Search search={search} /></div>
+            <div className="toggle-view" onClick={changeView}>
+                <div>Change View</div>
+                <div>{toggleView ? <ListUnorderedIcon size={16} className="ic"/> : <ProjectIcon size={16} className="ic"/>}</div>
+            </div>
             <div className="overflow-table">
                 <table>
-                    <thead>
+                    {!toggleView && <thead>
                         <tr>
                             <th></th>
                             <th>#Rank</th>
@@ -71,11 +80,11 @@ export default function CurrenciesList({ currencies, numOfCurrencies, handleSort
                             </th>
                             <th>Last 7 Days</th>
                         </tr>
-                    </thead>
+                    </thead>}
                     <tbody>
                         {
                             currencies.map(currency =>
-                                <CurrencyPreview currency={currency} key={currency.id} />)
+                                <CurrencyPreview currency={currency} key={currency.id} changeView={toggleView} />)
                         }
                     </tbody>
                 </table>

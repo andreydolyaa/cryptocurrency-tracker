@@ -6,6 +6,21 @@
     margin:auto;
     display: flex;
     flex-direction: column;
+    .toggle-view{
+        display: none;
+        margin-top:1rem;
+        padding:5px 0 5px 0;
+        justify-content: center;
+        align-items: center;
+        font-size:14px;
+        font-weight: 500;
+        background-color: #5b6168;
+        border-radius: 3px;
+        color: white;
+        .ic{
+            margin-left:10px;
+        }
+    }
     .rows{
         margin:1rem 0 1rem 1rem;
         align-self: flex-end;
@@ -82,6 +97,9 @@ table{
 @media(max-width:850px){
     .list{
         max-width: 600px;
+        .toggle-view{
+            display: flex;
+        }
     }
     table{
         max-width: 600px;
@@ -114,7 +132,6 @@ table{
     }
     table{
         max-width: 330px;
-        
     }
     .watch-link{
         a{

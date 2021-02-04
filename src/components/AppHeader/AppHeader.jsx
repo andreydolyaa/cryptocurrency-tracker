@@ -2,7 +2,7 @@
 
 import './AppHeader.scss';
 import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Search from './../Search/Search';
 import logoImg from '../../assets/icons/chart.png';
 import { ThreeBarsIcon } from '@primer/octicons-react';
@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 
 export default function AppHeader(props) {
     var [mobileMenu, setMobileMenu] = useState(false);
+    const history = useHistory();
 
 
     const toggleMobile = () => {
@@ -18,13 +19,17 @@ export default function AppHeader(props) {
         props.mobileMenu(mobileMenu);
     }
 
+    const toMainPage = () => {
+        history.push('/');
+    }
+
     return (
         <div className="app-header">
 
             <div className="brand">
                 <div className="logo">
-                    
-                    <h2 className="title"> Crypto<span>Scan</span></h2>
+
+                    <h2 onClick={toMainPage} className="title"> Crypto<span>Scan</span></h2>
                 </div>
                 <div className="items">
                     <Link to="/">Cryptocurrencies<span className="notif"></span></Link>
